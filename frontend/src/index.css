@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #dbeafe,
+    #e9eeff,
+    #eeebfd
+  );
+
+  min-height: 100vh;
+}
+
+
+/* Login / Register container */
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+/* Card */
+
+.card {
+  width: 400px;
+  max-width: 100%;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  animation: cardIn 0.6s ease;
+}
+
+
+.card h2 {
+  text-align: center;
+
+  margin-bottom: 25px;
+
+  color: #1e1458;
+
+  animation: titleIn 0.6s ease;
+}
+
+
+/* Form */
+
+form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+/* Input */
+
+input {
+  padding: 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.25s ease;
+}
+
+input:focus {
+  border-color: #6423d4;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* Main button */
+
+button {
+  width: 140px;
+
+  padding: 11px 18px;
+
+  margin: 5px auto 0;
+
+  border: none;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  background: linear-gradient(
+    #8554d8
+  );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.25s ease;
+
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+
+button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 16px rgba(196, 146, 236, 0.28);
+}
+
+
+button:active {
+  transform: scale(0.97);
+}
+
+
+/* Link button */
+
+.link-button {
+  width: auto;
+
+  background: none;
+
+  color: #6423d4;
+
+  padding: 4px;
+
+  margin: 0;
+
+  box-shadow: none;
+
+  font-weight: 600;
+}
+
+.link-button:hover {
+  transform: none;
+
+  box-shadow: none;
+
+  color:#c5acf0 ;
+}
+
+
+/* Smooth animations */
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes titleIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
