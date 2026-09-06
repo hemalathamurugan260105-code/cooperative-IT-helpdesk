@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import api from "../api";
 import { useNavigate } from "react-router-dom";
 
-import UserSidebar from "../components/user/UserSidebar";
+import UserSidebar from "../components/user/UserSideBar";
 import UserHeader from "../components/user/UserHeader";
 import TicketList from "../components/user/TicketList";
 import TicketDetails from "../components/user/TicketDetails";
